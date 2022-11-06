@@ -1,7 +1,7 @@
 
-// passing a function as an argument to another function.
+// passing a function as an argument to another function. doflexibleStuff
 
-function doflexiableStuff (excuteStuff) {
+function doflexibleStuff (excuteStuff) {
     excuteStuff();
     console.log("DoflexiableStuff");
 }
@@ -9,8 +9,8 @@ function doflexiableStuff (excuteStuff) {
 const function1 = () => console.log("Hello from function 1");
 const function2 = () => console.log("Hello from function 2");
 
-doflexiableStuff(function1); 
-doflexiableStuff(function2); 
+doflexibleStuff(function1); 
+doflexibleStuff(function2); 
 
 /* Output
 Hello from function 1
@@ -19,15 +19,15 @@ Hello from function 2
 DoflexiableStuff  
 */
 
-function doflexiableStuff (callback) {
+function doflexibleStuff (callback) {
     callback();  
 }
 
 const function3 = () => console.log("Hello from function 3");
 const function4 = () => console.log("Hello from function 4");
 
-doflexiableStuff(function3); 
-doflexiableStuff(function4); 
+doflexibleStuff(function3); 
+doflexibleStuff(function4); 
 
 /* Output
 Hello from function 3 
