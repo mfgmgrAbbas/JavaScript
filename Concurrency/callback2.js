@@ -1,5 +1,4 @@
-/* We deal with the topic of asynchronous code and some options for multitasking with
-code. This concept is called concurrency. Example with callback*/
+/* We deal with multitasking code. This concept is called concurrency. Example with callback*/
 
 function judge (grade) {
     switch(true) {
