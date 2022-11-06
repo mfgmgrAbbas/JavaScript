@@ -1,4 +1,4 @@
-// Set interval and timeout
+// Set interval and timeout.
 //  SetTimeout is use to after how much time it will appear
 setTimeout(() => {
     console.log("Hello everyone!");
