@@ -1,15 +1,15 @@
 const myWork = [];
-// for (let i = 1; i < 11; i++){
-//     let status = i % 2 ? true:false;
-//     let temporary = {
-//         name:`Lesson ${i}`,
-//         status: status
-//     }
-//     myWork.push(temporary);
+for (let i = 1; i < 11; i++){
+    let status = i % 2 ? true:false;
+    let temporary = {
+        name:`Lesson ${i}`,
+        status: status
+    }
+    myWork.push(temporary);
 
-// }
+}
 
-// console.log(myWork);
+console.log(myWork);
 /* Output
 [
   { name: 'Lesson 1', status: true }, 
