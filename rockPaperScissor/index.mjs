@@ -1,3 +1,10 @@
+/* First install 
+npm init
+npm install prompt-sync
+npm install random-int
+*/
+
+
 import promptSync from "prompt-sync";
 import randomInteger from "random-int";
 import randomInterger from "random-int";
