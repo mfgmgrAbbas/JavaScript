@@ -1,8 +1,3 @@
-// import PromptSync from "prompt-sync";
-// const prompt = promptSync();
-// let userInput = "On a scale of 1-10, how much do you like the name Alaxander";
-// userInput = Number(userInput);
-// while ()
 
 let i = 0;
 while (i <11) {
