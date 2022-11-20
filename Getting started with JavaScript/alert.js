@@ -26,3 +26,17 @@ console.log(Math.floor(Math.random() *100 ));
 /* Output
 42
 */
+
+let str1 = "JavaScript is fun!";
+let str2 = "JavaScript is fun!";
+console.log("These two strings are the same:", str1 === str2);  // These two strings are the same: true
+let sym1 = Symbol("JavaScript is fun!");
+let sym2 = Symbol("JavaScript is fun!");
+console.log("These two Symbols are the same:", sym1 === sym2); // false when convertinto symbol it is false even it is same These two Symbols are the same: false
+
+let empty = null;
+let terribleThingToDo = undefined;
+let lastName;
+console.log("Same undefined:", lastName === terribleThingToDo); // Same undefined: true
+let betterOption = null;
+console.log("Same null:", lastName === betterOption); // Same null: false
