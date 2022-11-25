@@ -63,3 +63,70 @@ These are student1 complete details:  {
   }
 }
 */
+let array = [0, 1, 3, 4, 5, 6];
+console.log(typeof array); // object
+
+let dog = {
+  breed: "German shfard",
+  color: "black",
+  weight: "2.4",
+  height: "3 ft 4 inch",
+  age: 3,
+  burglarBiter: true,
+}
+let dogColor = ["color"];
+let dogColor1 = dog.color;
+console.log(dogColor, dogColor1);
+dog["color"] = "white";
+dog.weight = 2.3;
+console.log(dog);
+dog["age"] = "three";
+let variable = "age";
+console.log(dog[variable]); // three
+variable = "breed";
+console.log(dog[variable]); // German shfard
+dog[variable] = "dachshund";
+console.log(dog["breed"]); // dachshund
+let company = {
+  name: "Robtic Manufacturing",
+  activity: "Robot Manufacturing",
+  address: {
+    address: "3 main city USA",
+    city: "elaska",
+    postalCode: 122355,
+    number: 5428855,
+  },
+  yearOfEstablishment: 2007,
+
+}
+console.log(company);
+/* {
+  name: 'Robtic Manufacturing',
+  activity: 'Robot Manufacturing',
+  address: {
+    address: '3 main city USA',
+    city: 'elaska',
+    postalCode: 122355,
+    number: 5428855
+  },
+  yearOfEstablishment: 2007
+}*/
+// for update a element in sub objects
+company.address.city = "California";
+company["address"]["number"] = 4523582;
+console.log("Comapny after updating number and city ", company);
+
+/* Comapny after updating number and city  {
+  name: 'Robtic Manufacturing',
+  activity: 'Robot Manufacturing',
+  address: {
+    address: '3 main city USA',
+    city: 'California',
+    postalCode: 122355,
+    number: 4523582
+  },
+  yearOfEstablishment: 2007
+}*/
+
+
+ 
