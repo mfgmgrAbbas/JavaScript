@@ -33,3 +33,14 @@ function coffeOrder (drink){
 const order3 = coffeOrder("Esprsso");
 console.log(order3);
 /* Your coffe Esprsso is on the way! */
+
+function myFirst() {
+    console.log("Hello");
+  }
+  
+  function mySecond() {
+    console.log("Goodbye");
+  }
+  
+  myFirst();
+  mySecond();

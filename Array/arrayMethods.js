@@ -71,3 +71,31 @@ to get the second array of this one, which again is index 1. Now we reach
 the level of the values, and we need the second value, so again we use index
 1. This is useful in many situations, for example, when you want to work
 with matrices. */
+
+const points = [40, 100, 1, 5, 25, 10];
+const sortedPoints = points.sort(function(a, b){return a-b}); // it will sort numercially in asending order
+console.log(sortedPoints); // [ 1, 5, 10, 25, 40, 100 ]
+const points1 = [40, 100, 1, 5, 25, 10];
+const sortPointsDecendingOrder = points1.sort(function(a, b){return b-a});
+console.log(sortPointsDecendingOrder); // [ 100, 40, 25, 10, 5, 1 ]
+
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+const carSorted = cars.sort(function(a, b){return a.year - b.year}) // soting in Object
+console.log(carSorted);
+/* [
+  { type: 'Saab', year: 2001 },
+  { type: 'BMW', year: 2010 },
+  { type: 'Volvo', year: 2016 }
+]*/
+
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction); // .filter() method filter the values and gives new array
+
+function myFunction(value) {
+  return value > 18;
+}
+console.log(over18);
